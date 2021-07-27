@@ -460,15 +460,15 @@
     </build>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>yaxon-nexus-releases</id>
+            <name>Yaxon Nexus Releases</name>
+            <url>http://172.16.80.144:8081/nexus/content/repositories/releases/</url>
         </repository>
+        <snapshotRepository>
+            <id>yaxon-nexus-snapshots</id>
+            <name>Yaxon Nexus Snapshots</name>
+            <url>http://172.16.80.144:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
 </project>
